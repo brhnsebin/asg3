@@ -74,6 +74,7 @@ exports.postSignup = (req, res, next) => {
                 imgUrl: req.body.imgUrl
             })
             return user.save();
+            res.redirect('/login');
         })
        
 
