@@ -1,0 +1,16 @@
+<main class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-">
+        {{#each users}}
+        <div class="col mb-4">
+            <div class="card">
+                <img src="{{imgUrl}}" class="card-img-top" height="250">
+                <div class="card-body">
+                    <h5 class="card-title text-center">{{name}}</h5>
+                    <h6 class="text-center"> {{email}}</h6>
+                    <p> Phone : {{phone}}</p>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</main>
